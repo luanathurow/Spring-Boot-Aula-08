@@ -6,6 +6,13 @@ public class Livro {
     String autor;
     int ano;
 
+    public Livro(int id, String titulo, String autor, int ano) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ano = ano;
+    }
+
     public int getId() {
         return this.id;
     }
@@ -38,4 +45,8 @@ public class Livro {
         this.ano = ano;
     }
     
+    @Override
+    public String toString() {
+        return "Livro [id=" + id + ", titulo=" + titulo + ", autor=" + autor + ", ano=" + ano + "]";
+    }
 }
